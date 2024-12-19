@@ -1,0 +1,138 @@
+/* Reset some basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white; /* Black fonts */
+    line-height: 1.6;
+    background: linear-gradient(180deg, rgba(0, 21, 41, 0.9), rgba(0, 58, 114, 0.9)), url('images/main_photo.jpg') no-repeat center center/cover; /* Gradient navy blue and image background */
+}
+
+/* Hero Section */
+.hero-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 21, 41, 0.9), rgba(0, 58, 114, 0.9)), url('images/main_photo.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navlinks a:hover {
+    color: #007BFF;
+}
+
+/* Toggle Button */
+.togglebtn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.togglebtn span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: white;
+}
+
+.project img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: 200px; /* Sets a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image maintains proportions and fills the space */
+    border-radius: 10px; /* Optional: Adds rounded corners for a polished look */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
